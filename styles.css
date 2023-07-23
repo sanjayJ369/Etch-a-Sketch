@@ -1,0 +1,36 @@
+* , *::before, *::after{
+    box-sizing: border-box;
+}
+
+:root {
+    --pixelSize: 10px;
+}
+
+body {
+
+    background-color: rgb(145, 145, 145);
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.sketchPad {
+    background-color: white;
+    width: 600px;
+    height: 600px;
+    padding: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.pixel {
+    background-color: rgb(13, 255, 90);
+    border: 1px solid black;
+    width: var(--pixelSize);
+    height: var(--pixelSize);
+}

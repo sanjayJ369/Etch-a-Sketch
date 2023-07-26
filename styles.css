@@ -18,7 +18,7 @@ body {
 }
 
 .sketchPad {
-    background-color: white;
+    
     width: 600px;
     height: 600px;
     padding: 0;
@@ -29,7 +29,7 @@ body {
 }
 
 .pixel {
-    background-color: rgb(13, 255, 90);
+    background-color: rgb(255, 255, 255);
     border: 1px solid black;
     width: var(--pixelSize);
     height: var(--pixelSize);

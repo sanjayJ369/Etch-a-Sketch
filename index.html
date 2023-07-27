@@ -8,8 +8,21 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="sketchPad">
-
-    </div>
+    <nav>
+        <ul class="features">
+            <li><button data-color="rainbow">RAINBOW</button></li>
+            <li><button data-color="erase">ERASE</button></li>
+            <li>
+                <label for="shade">SHADE</label>
+                <input id="shade" type="checkbox">
+            </li>
+            <li><button id = "clear">CLEAR</button></li>
+            <li class="colorPicker">
+                <label for="colorPicker">COLOR</label>
+                <input id="colorPicker" type="color" value="rgba(0,0,20,1)">
+            </li>
+        </ul>
+    </nav>
+    <div class="sketchPad"></div>
 </body>
 </html>

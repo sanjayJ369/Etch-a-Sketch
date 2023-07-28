@@ -45,7 +45,12 @@ button {
 }
 .features {
     display: flex;
-    gap: 20px;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+#gridSize {
+    max-width: 50px;
 }
 
 .colorPicker {

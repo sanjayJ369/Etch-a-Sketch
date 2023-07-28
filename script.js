@@ -176,3 +176,13 @@ colorPicker.addEventListener("click", (e) => {
     colorMode = "none";
 })
 
+
+
+//code to generate new grid
+const newGrid = document.querySelector("#newGrid");
+newGrid.addEventListener("click", (e) => {
+    pixelCount = document.querySelector("#gridSize").value;
+    if (pixelCount >= 100) pixelCount = 100;
+    createSketchpad(pixelCount);
+})
+

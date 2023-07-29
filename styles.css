@@ -1,14 +1,19 @@
 * , *::before, *::after{
     box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
 }
 
 :root {
     --pixelSize: 10px;
+    --mainBackgroundColor: #78C1F3;
+    --buttonBackgroundColor: #E2F6CA;
+    --textColor: #F8FDCF;
 }
 
 body {
 
-    background-color: rgb(145, 145, 145);
+    background-color: var(--mainBackgroundColor);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -20,6 +25,8 @@ body {
 
 .sketchPad {
     
+    background-color: white;
+
     width: 600px;
     height: 600px;
     padding: 0;
@@ -42,17 +49,52 @@ ul {
 
 button {
     font-size: inherit;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--buttonBackgroundColor);
 }
+
+.shade {
+    background-color: var(--buttonBackgroundColor);
+    border-radius:10px;
+    padding: 5px;
+}
+
+.gridSize {
+    background-color: var(--buttonBackgroundColor);
+    padding: 5px;
+    border-radius: 10px;
+}
+
 .features {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
     gap: 30px;
+    padding: 10px 20px;
+}
+
+nav {
+    background-color: #9BE8D8;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 50px;
+    margin: 30px;
 }
 
 #gridSize {
     max-width: 50px;
+    border-radius: 10px;
 }
 
+
+
 .colorPicker {
-    color: white;
+    background-color: var(--buttonBackgroundColor);
+    padding: 5px;
+    border-radius: 10px;
 }
